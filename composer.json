@@ -1,0 +1,46 @@
+{
+    "name": "erjanmx/laravel-migrate-check",
+    "description": "A command to check for pending migrations. Exits with non-zero code if there are any",
+    "keywords": [
+        "migrate",
+        "check",
+        "eloquent",
+        "database",
+        "laravel-migrate-check"
+    ],
+    "homepage": "https://github.com/erjanmx/laravel-migrate-check",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erjan",
+            "email": "erjanmx@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/console": "^5.3.28",
+        "illuminate/events": "^5.3.28"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^3.3",
+        "phpunit/phpunit": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erjanmx\\MigrateCheck\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Erjanmx\\MigrateCheck\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "/vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+  }
+}
