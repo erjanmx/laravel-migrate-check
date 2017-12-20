@@ -1,9 +1,8 @@
-# An artisan command to check for pending migrations. Exits with non-zero code if there any. 
+### An artisan command to check for pending migrations. Exits with non-zero code if there any. 
 
-### Useful to detect, whether to run migrations or not when using automatic deployment
+[![Build Status](https://img.shields.io/travis/erjanmx/laravel-migrate-check/master.svg?style=flat-square)](https://travis-ci.org/erjanmx/laravel-migrate-check)
 
-
-Laravel has a `migrate:status` command to check status of migrations. But this command mostly for humans. But there are situations where one needs to know whether to run migrations when autodeploying to production environment, maybe with switching to maintenance mode.
+Laravel has a `migrate:status` command to check status of migrations. But this command mostly for humans. There are situations where one needs to know whether to run migrations when using autodeployment, maybe with switching to maintenance mode.
 
 This package contains a `migrate:check` command that exits with non-zero code if there are any migrations to run.
 
