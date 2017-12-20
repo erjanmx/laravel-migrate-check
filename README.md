@@ -2,6 +2,12 @@
 
 ### Useful to detect, whether to run migrations or not when using automatic deployment
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/erjanmx/laravel-migrate-check.svg?style=flat-square)](https://packagist.org/packages/erjanmx/laravel-migrate-check)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/spatie/laravel-migrate-fresh/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-migrate-fresh)
+[![Quality Score](https://img.shields.io/scrutinizer/g/spatie/laravel-migrate-fresh.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-migrate-fresh)
+[![StyleCI](https://styleci.io/repos/78428025/shield?branch=master)](https://styleci.io/repos/78428025)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-migrate-fresh.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-migrate-fresh)
 
 Laravel has a `migrate:status` command to check status of migrations. But this command mostly for humans. But there are situations where one needs to know whether to run migrations when autodeploying to production environment, maybe with switching to maintenance mode.
 
