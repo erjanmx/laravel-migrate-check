@@ -1,4 +1,6 @@
-# An artisan command to check for pending migrations. Exits with non-zero code if there any. Useful for detection whether to run migrations when using automatical deployment
+# An artisan command to check for pending migrations. Exits with non-zero code if there any. 
+
+### Useful to detect, whether to run migrations or not when using automatic deployment
 
 
 Laravel has a `migrate:status` command to check status of migrations. But this command mostly for humans. But there are situations where one needs to know whether to run migrations when autodeploying to production environment, maybe with switching to maintenance mode.
@@ -17,16 +19,7 @@ You can install the package via composer:
 composer require erjanmx/laravel-migrate-check
 ```
 
-Next add the `Erjanmx\MigrateCheck\Commands\MigrateCheckCommand` class to your console kernel.
-
-```php
-// app/Console/Kernel.php
-
-protected $commands = [
-   ...
-    \Erjanmx\MigrateCheck\Commands\MigrateCheckCommand::class,
-]
-```
+Thanks to Laravel 5.5 package auto-discovery the `migrate:check` command will be registered
 
 ## Usage
 
