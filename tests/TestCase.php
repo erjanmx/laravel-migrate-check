@@ -2,6 +2,7 @@
 
 namespace Erjanmx\MigrateCheck\Test;
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Artisan;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -46,8 +47,10 @@ abstract class TestCase extends Orchestra
 
     protected function setUpDatabase()
     {
-        $this->app->useDatabasePath(__DIR__ . '/database');
+        Schema::dropIfExists('test_table');
+        Schema::dropIfExists('migrations');
 
-        Artisan::call('migrate:reset');
+        $this->app->useDatabasePath(__DIR__ . '/database');
+        Artisan::call('migrate:install');
     }
 }
