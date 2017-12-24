@@ -28,7 +28,7 @@ php artisan migrate:сheck
 
 You can specify database and path to migration file via options just like they are used in `php artisan migrate` command
 
-![ezgif com-gif-maker 1](https://user-images.githubusercontent.com/22002562/34158320-e93a62c6-e4d5-11e7-94ed-d4ee9a5c9a37.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/4899432/34324977-691c5ca2-e895-11e7-9564-f4313763bc74.gif)
 
 ## Changelog
 
