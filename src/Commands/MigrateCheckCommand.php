@@ -53,7 +53,7 @@ class MigrateCheckCommand extends BaseCommand
 
         $pendingMigrations = array_diff(
             array_keys($files),
-            $this->migrator->getRepository()->getRan()
+            $this->getRanMigrations()
         );
 
         if ($pendingMigrations) {
@@ -65,5 +65,19 @@ class MigrateCheckCommand extends BaseCommand
         $this->info('No pending migrations.');
 
         return 0;
+    }
+
+    /**
+     * Gets ran migrations with repository check
+     * 
+     * @return array
+     */
+    public function getRanMigrations()
+    {
+        if (! $this->migrator->repositoryExists()) {
+            return [];
+        }
+
+        return $this->migrator->getRepository()->getRan(); 
     }
 }
