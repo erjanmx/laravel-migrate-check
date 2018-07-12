@@ -49,7 +49,7 @@ class MigrateCheckCommand extends BaseCommand
     {
         $this->migrator->setConnection($this->option('database'));
 
-        $files = $this->migrator->getMigrationFiles($this->getMigrationPath());
+        $files = $this->migrator->getMigrationFiles($this->getMigrationPaths());
 
         $pendingMigrations = array_diff(
             array_keys($files),
