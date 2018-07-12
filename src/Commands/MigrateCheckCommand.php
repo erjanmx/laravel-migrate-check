@@ -57,7 +57,9 @@ class MigrateCheckCommand extends BaseCommand
         );
 
         if ($pendingMigrations) {
-            $this->table(['Pending migrations'], [ $pendingMigrations ]);
+            $this->table(['Pending migrations'], array_map(function ($migration) {
+                return [ $migration ];
+            }, $pendingMigrations));
 
             return 1;
         }
