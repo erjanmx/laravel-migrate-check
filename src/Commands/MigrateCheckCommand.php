@@ -67,6 +67,11 @@ class MigrateCheckCommand extends BaseCommand
         return 0;
     }
 
+    /**
+     * Gets ran migrations with repository check
+     * 
+     * @return array
+     */
     public function getRanMigrations()
     {
         if (! $this->migrator->repositoryExists()) {
