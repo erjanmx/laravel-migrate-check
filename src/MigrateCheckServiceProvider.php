@@ -21,10 +21,8 @@ class MigrateCheckServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                MigrateCheckCommand::class,
-            ]);
-        }
+        $this->commands([
+            MigrateCheckCommand::class,
+        ]);
     }
 }
