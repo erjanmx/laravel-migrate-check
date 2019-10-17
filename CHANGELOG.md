@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-migrate-check` will be documented in this file
 
+## 1.3.0 - 2019-10-17
+
+- Add Laravel 6.x support
+
 ## 1.2.1 - 2018-09-28
 
 - Always register command (not only in console mode)
