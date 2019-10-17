@@ -8,7 +8,7 @@ use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
 
@@ -24,7 +24,7 @@ abstract class TestCase extends Orchestra
 
         $app['config']->set('database.connections.mysql', [
             'driver' => 'mysql',
-            'host' => 'localhost',
+            'host' => '127.0.0.1',
             'database' => 'laravel_migrate_check',
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
