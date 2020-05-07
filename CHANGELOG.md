@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-migrate-check` will be documented in this file
 
+## 2.0.0
+
+- Add Laravel 7.x support
+- Drop Laravel 5.5.x and PHP 7.1 support
+
 ## 1.3.0 - 2019-10-17
 
 - Add Laravel 6.x support
