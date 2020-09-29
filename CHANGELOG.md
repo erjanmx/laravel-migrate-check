@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-migrate-check` will be documented in this file
 
+## 2.1.0 - 2020-09-30
+
+- Add Laravel 8.x support
+- Drop Laravel 5.x support
+
 ## 2.0.0
 
 - Add Laravel 7.x support
