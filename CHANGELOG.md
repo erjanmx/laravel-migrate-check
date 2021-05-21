@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-migrate-check` will be documented in this file
 
+## 2.2.0 - 2021-05-21
+
+- Add PHP 8 support
+
 ## 2.1.0 - 2020-09-30
 
 - Add Laravel 8.x support
